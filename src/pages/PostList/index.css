@@ -55,3 +55,30 @@
 .postListSection > ul > li > button:hover {
   background-color: var(--button-link-hover-color);
 }
+
+.deleteModal > h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.deleteModal > .btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.deleteModal > .btns > button {
+  background-color: var(--button-link-color);
+  color: white;
+  text-align: right;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.deleteModal > .btns > button:hover {
+  background-color: var(--button-link-hover-color);
+}

@@ -3,6 +3,7 @@ import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
 import { deletePost, getAllPosts } from "../../apis/posts";
 import "./index.css";
+import PortalModalContainer from "../../components/PortalModalContainer";
 
 export default function PostList() {
   const [posts, setPosts] = useState([]);
@@ -49,35 +50,22 @@ export default function PostList() {
 
       {openModal &&
         createPortal(
-          <div
-            style={{
-              position: "fixed",
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              backgroundColor: "rgba(0,0,0,0.5)",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <div
-              style={{
-                backgroundColor: "white",
-                padding: "20px",
-                borderRadius: "5px",
-              }}
-            >
+          <PortalModalContainer>
+            <div className="deleteModal">
               <h3>Are you sure you want to delete id={openModal} post?</h3>
-              <button onClick={handleDelete} disabled={isDeleting}>
-                Yes
-              </button>
-              <button onClick={() => setOpenModal(null)} disabled={isDeleting}>
-                No
-              </button>
+              <div className="btns">
+                <button onClick={handleDelete} disabled={isDeleting}>
+                  Yes
+                </button>
+                <button
+                  onClick={() => setOpenModal(null)}
+                  disabled={isDeleting}
+                >
+                  No
+                </button>
+              </div>
             </div>
-          </div>,
+          </PortalModalContainer>,
           document.body
         )}
     </section>
