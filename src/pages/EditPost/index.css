@@ -1,0 +1,59 @@
+.postFormContainer {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 18px;
+  color: #333;
+  width: 100%;
+}
+
+.postFormContainer > h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.postFormContainer input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.postFormContainer textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.postFormContainer button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--button-link-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.postFormContainer button:hover {
+  background-color: var(--button-link-hover-color);
+}
+
+.lastEditPostIdText {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #666;
+}

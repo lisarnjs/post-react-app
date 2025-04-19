@@ -1,0 +1,56 @@
+.PostDetailContainer {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 18px;
+  color: #333;
+  width: 100%;
+}
+
+.PostDetailContainer > h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.PostDetailContainer > h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.PostDetailContainer > p {
+  width: 50%;
+  font-size: 16px;
+  line-height: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btns {
+  display: flex;
+}
+
+.btns > a {
+  text-decoration: none;
+
+  margin-right: 10px;
+
+  background-color: var(--button-link-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btns > button {
+  background-color: var(--button-link-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
