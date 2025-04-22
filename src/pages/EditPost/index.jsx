@@ -1,8 +1,8 @@
-import { useNavigate, useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { getPostById, updatePost } from "../../apis/posts";
-import PostForm from "../../components/PostForm";
-import "./index.css";
+import { useNavigate, useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { getPostById, updatePost } from '../../apis/posts';
+import PostForm from '../../components/PostForm';
+import './index.css';
 
 export default function EditPost() {
   const { id } = useParams();

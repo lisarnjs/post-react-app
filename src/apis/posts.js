@@ -1,4 +1,4 @@
-const API_URL = "https://jsonplaceholder.typicode.com/posts";
+const API_URL = 'https://jsonplaceholder.typicode.com/posts';
 
 export async function getAllPosts() {
   const res = await fetch(API_URL);
@@ -12,9 +12,9 @@ export async function getPostById(id) {
 
 export async function createPost(data) {
   const res = await fetch(API_URL, {
-    method: "POST",
+    method: 'POST',
     headers: {
-      "Content-type": "application/json; charset=UTF-8",
+      'Content-type': 'application/json; charset=UTF-8',
     },
     body: JSON.stringify(data),
   });
@@ -23,9 +23,9 @@ export async function createPost(data) {
 
 export async function updatePost(id, data) {
   const res = await fetch(`${API_URL}/${id}`, {
-    method: "PUT",
+    method: 'PUT',
     headers: {
-      "Content-type": "application/json; charset=UTF-8",
+      'Content-type': 'application/json; charset=UTF-8',
     },
     body: JSON.stringify(data),
   });
@@ -34,7 +34,7 @@ export async function updatePost(id, data) {
 
 export async function deletePost(id) {
   const res = await fetch(`${API_URL}/${id}`, {
-    method: "DELETE",
+    method: 'DELETE',
   });
   return res.ok;
 }

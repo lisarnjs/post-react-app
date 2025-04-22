@@ -1,10 +1,10 @@
-import { useState } from "react";
-import { createPortal } from "react-dom";
-import PortalModalContainer from "./PortalModalContainer";
+import { useState } from 'react';
+import { createPortal } from 'react-dom';
+import PortalModalContainer from './PortalModalContainer';
 
 export default function PostForm({
   onSubmit,
-  initialValues = { title: "", body: "" },
+  initialValues = { title: '', body: '' },
 }) {
   const [title, setTitle] = useState(initialValues.title);
   const [body, setBody] = useState(initialValues.body);

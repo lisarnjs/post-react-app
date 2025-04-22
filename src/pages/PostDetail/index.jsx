@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import "./index.css";
-import { getPostById } from "../../apis/posts";
-import { createPortal } from "react-dom";
-import PortalModalContainer from "../../components/PortalModalContainer";
+import { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import './index.css';
+import { createPortal } from 'react-dom';
+import { getPostById } from '../../apis/posts';
+import PortalModalContainer from '../../components/PortalModalContainer';
 
 export default function PostDetail() {
   const { id } = useParams();
@@ -21,7 +21,6 @@ export default function PostDetail() {
       <h2>Post Id : {id}</h2>
       <h3>{post.title}</h3>
       <p>{post.body}</p>
-
       <div className="btns">
         <Link to={`/posts/${post.id}/edit`}>Edit</Link>
         <button onClick={() => setShowModal(true)}>즐겨찾기</button>

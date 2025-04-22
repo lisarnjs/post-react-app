@@ -1,7 +1,7 @@
-import { useState } from "react";
-import "./index.css";
-import { createPortal } from "react-dom";
-import PortalModalContainer from "../../components/PortalModalContainer";
+import { useState } from 'react';
+import './index.css';
+import { createPortal } from 'react-dom';
+import PortalModalContainer from '../../components/PortalModalContainer';
 
 export default function Home() {
   const [showLoginModal, setShowLoginModal] = useState(false);
